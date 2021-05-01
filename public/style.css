@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    background-color: rgb(44, 44, 44)
+}
+#root{
+    background-color:  rgb(44, 44, 44)
+}
+
+.form-control{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-body{
+    text-align:center;
+    background-color: rgb(205, 209, 209);
+}
+.card{
+    margin-top: 30px 0;
+}

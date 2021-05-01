@@ -1,7 +1,7 @@
 import React from "react"
 import GalleryView from "./GalleryView"
 import FilterInput from "./FilterInput"
-
+import { Container } from "react-bootstrap"
 class ActorPage extends React.Component {
     constructor(props) {
         super(props)
@@ -18,10 +18,10 @@ class ActorPage extends React.Component {
     render() {
         const actors = this.props.list;
         return (
-            <div>
-                <FilterInput filter={this.state.filter} changeFilter={this.changeFilter} />
+            <Container>
+                <FilterInput col="6" filter={this.state.filter} changeFilter={this.changeFilter} />
                 <GalleryView list={actors} filter={this.state.filter} />
-            </div>
+            </Container>
 
         )
     }

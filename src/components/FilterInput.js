@@ -1,5 +1,5 @@
 import React from "react"
-import { Form } from "react-bootstrap";
+import { Col, Form } from "react-bootstrap";
 import ActorsData from "../data models/ActorsData"
 import ActorCard from "./ActorCard"
 
@@ -10,13 +10,11 @@ class FilterInput extends React.Component {
 
     render() {
         return (
-            <div>
-                <Form.Control
-                    value={this.props.filter}
-                    type="text"
-                    placeholder="Normal text"
-                    onChange={this.props.changeFilter} />
-            </div>
+            <Form.Control
+                value={this.props.filter}
+                type="text"
+                placeholder="Normal text"
+                onChange={this.props.changeFilter} />
         )
     }
 }
